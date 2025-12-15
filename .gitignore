@@ -46,7 +46,6 @@ yarn-error.log*
 *.dylib
 
 # Go
-*.exe
 *.test
 *.prof
 go.work
@@ -54,8 +53,6 @@ go.work
 # C#
 bin/
 obj/
-*.dll
-*.exe
 *.pdb
 *.user
 *.cache
@@ -64,7 +61,6 @@ obj/
 target/
 Cargo.lock
 **/*.rs.bk
-*.pdb
 
 # IDE specific
 .idea/
