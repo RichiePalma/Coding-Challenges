@@ -1,55 +1,53 @@
 # coding-challenges
-Code submissions for LeetCode, HackerRank and other similar platforms.
+
+This repository will contain all code submissions for LeetCode, HackerRank and other similar platforms.
 
 ## Directory Structure
 
 This repository follows a standardized directory structure for organizing coding challenge solutions:
 
 ```
-{platform}/{question-no}/{language}/{src||test}/filename
+{platform}/{language}/src/filename
 ```
 
+And their respective tests in:
+
+```
+{platform}/{language}/test/filename
+```
 ### Structure Breakdown
 
 - **platform**: The coding challenge platform (e.g., `leetcode`, `hackerrank`, `codewars`)
-- **question-no**: Platform-specific question identifier (e.g., `lc1` for LeetCode Problem 1, `hr1` for HackerRank Problem 1)
 - **language**: Programming language used (e.g., `java`, `python`, `javascript`, `cpp`, `go`)
-- **src||test**: Either `src` for source code or `test` for test files
-- **filename**: The actual source or test file
+- **src or test**: Either `src` for source code or `test` for test files
+- **filename**: The actual source or test file. Each filename will hold a name that corresponds to the problem title. There may be different approaches within the same file under a different function or method.
 
-### Examples
+## List of Problems solved
 
-#### LeetCode Problem 1 (Two Sum) in Java
-```
-leetcode/lc1/java/src/TwoSum.java
-leetcode/lc1/java/test/TwoSumTest.java
-```
+### LeetCode
 
-#### LeetCode Problem 1 (Two Sum) in Python
-```
-leetcode/lc1/python/src/two_sum.py
-leetcode/lc1/python/test/test_two_sum.py
-```
+<details>
+  <summary>1. Two Sum</summary>
 
-#### HackerRank Problem in Java
-```
-hackerrank/hr1/java/src/SimpleArraySum.java
-hackerrank/hr1/java/test/SimpleArraySumTest.java
-```
+[LeetCode Problem Description](https://leetcode.com/problems/two-sum/description/)
 
-## Supported Languages
+Code Submissions list:
 
-The repository supports submissions in any programming language that works with IntelliJ IDEA, Eclipse, Visual Studio Code, or other appropriate IDEs, including but not limited to:
+- Java: [`TwoSum.java`](leetcode/java/src/TwoSum.java) && [`TwoSumTest.java`](leetcode/java/test/TwoSumTest.java)
+- Python: [`two_sum.py`](leetcode/python/src/two_sum.py) && [`test_two_sum.py`](leetcode/python/test/test_two_sum.py)
 
-- Java
-- Python
-- JavaScript/TypeScript
-- C++
-- Go
-- C#
-- Rust
-- And more...
+</details>
 
-## Testing
+### HackerRank
 
-Each solution should include comprehensive test cases in the `test` directory to validate the implementation.
+<details>
+  <summary>Compare the Triplets</summary>
+
+[HackerRank Problem Description](https://www.hackerrank.com/challenges/compare-the-triplets/problem)
+
+Code Submissions list:
+
+- Java: [`CompareTriplets.java`](hackerrank/java/src/CompareTriplets.java) && [`CompareTripletsTest.java`](hackerrank/java/test/CompareTripletsTest.java)
+- Python: [`compare_triplets.py`](hackerrank/python/src/compare_triplets.py) && [`test_compare_triplets.py`](hackerrank/python/test/test_compare_triplets.py)
+
+</details>
