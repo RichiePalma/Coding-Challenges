@@ -13,6 +13,10 @@ public class ValidPalindrome {
                 right--;
             }
 
+            if (left >= right) {
+                break;
+            }
+
             if(Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))){
                 return false;
             }
@@ -27,7 +31,7 @@ public class ValidPalindrome {
     public boolean validateWithHalfLoop(String s){
         s = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
 
-        for(int i = 0; i < s.length() /2; i++) {
+        for(int i = 0; i < s.length() / 2; i++) {
 
             if(s.charAt(i) != s.charAt(s.length() - 1 - i)) {
                 return false;
@@ -38,9 +42,9 @@ public class ValidPalindrome {
     }
 
     public boolean validateWithStringBuilder(String s){
-        s = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();;
+        s = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
         StringBuilder sb = new StringBuilder(s);
 
-        return sb.toString().contentEquals(sb.reverse());
+        return sb.toString().contentEquals(new StringBuilder(sb).reverse());
     }
 }
