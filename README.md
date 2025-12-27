@@ -50,6 +50,18 @@ Code Submissions list:
 
 </details>
 
+<details>
+  <summary>206. Reverse Linked List</summary>
+
+[LeetCode Problem Description](https://leetcode.com/problems/reverse-linked-list/description/)
+
+Code Submissions list:
+
+- Java: [`ReverseLinkedList.java`](leetcode/java/src/ReverseLinkedList.java) && [`ReverseLinkedListTest.java`](leetcode/java/test/ReverseLinkedListTest.java)
+- Python: [`reverse_linked_list.py`](leetcode/python/src/reverse_linked_list.py) && [`test_reverse_linked_list.py`](leetcode/python/test/test_reverse_linked_list.py)
+
+</details>
+
 ### HackerRank
 
 <details>
